@@ -13,6 +13,12 @@ function detailReducer(state = initalState, action) {
   switch (action.type) {
     case GET_DETAILS:
       return {...state, details: action.payload};
+    case POST_DETAIL:
+      return {...state};
+    case UPDATE_DETAIL:
+      return {...state};
+    case DELETE_DETAIL:
+      return {...state};
     default:
       return state;
   }
